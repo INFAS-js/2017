@@ -43,7 +43,6 @@ function resize(){
 	document.getElementById("title-text").style.marginTop = 
 		"calc( ( "+titleTextCenter+"px - 20vh ) / 2 )";
 }
-resize();
 window.onresize = function(event) {
     resize();
 };
@@ -115,4 +114,7 @@ document.addEventListener('keydown',function(){
 			break;
 	}
 })
-
+window.onload = function() {
+	resize();
+	document.getElementById("loading-page").style.display = "none";
+}

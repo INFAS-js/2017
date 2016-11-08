@@ -13,6 +13,17 @@ body{
 	font-size: 12pt;
 }
 
+#loading-page {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #F7CAC9;
+	z-index: 1000;
+}
+
 #main{
 	width: 100vw;
 	height: 100vh;
