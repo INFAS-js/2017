@@ -5,9 +5,6 @@ var space = 2;
 var atUpper = 1;
 var min;
 var buttonPercent = 10;
-/*function setButtonSize(a,b){
-	for(int i=0;i)
-}*/
 function resize(){
 	if (document.documentElement.clientHeight > document.documentElement.clientWidth){
 		min = document.documentElement.clientWidth;
@@ -37,11 +34,16 @@ function resize(){
 		document.getElementById("title-logo").clientHeight;
 	var titleTextHeight = 
 		document.getElementById("title-text").clientHeight;
+	var goalTextHeight = 
+		document.getElementById("goal-text").clientHeight;
 	var pageContentHeight = 
 		document.getElementsByClassName("page-content")[0].clientHeight;
 	var titleTextCenter = pageContentHeight-titleLogoHeight-titleTextHeight;
+	var goalTextCenter = pageContentHeight-goalTextHeight;
 	document.getElementById("title-text").style.marginTop = 
 		"calc( ( "+titleTextCenter+"px - 20vh ) / 2 )";
+	document.getElementById("goal-text").style.marginTop = 
+		"calc( ( "+goalTextCenter+"px - 20vh ) / 2 )";
 }
 window.onresize = function(event) {
     resize();

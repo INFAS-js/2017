@@ -143,7 +143,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 1670,
+				"buffer_size": 1705,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -152,7 +152,7 @@
 			"file": "index.css",
 			"settings":
 			{
-				"buffer_size": 1889,
+				"buffer_size": 2035,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -178,7 +178,7 @@
 			"file": "index.js",
 			"settings":
 			{
-				"buffer_size": 3679,
+				"buffer_size": 3774,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -396,15 +396,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1670,
+						"buffer_size": 1705,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1261,
-								1261
+								521,
+								226
 							]
 						],
 						"settings":
@@ -414,10 +414,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 24.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -432,15 +432,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1889,
+						"buffer_size": 2035,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1595,
-								1595
+								295,
+								295
 							]
 						],
 						"settings":
@@ -449,10 +449,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 864.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -525,15 +525,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3679,
+						"buffer_size": 3774,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2273,
-								2273
+								3707,
+								3707
 							]
 						],
 						"settings":
@@ -542,7 +542,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 182.0,
+						"translation.y": 1404.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -667,7 +667,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 		"last_automatic_layout":

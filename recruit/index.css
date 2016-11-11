@@ -140,6 +140,11 @@ body{
 	z-index: 200;
 }
 
+#goal-text{
+	color: black;
+	text-align: center;
+}
+
 #groups{
 	background-color: #034f84;
 	left: 4vw;
