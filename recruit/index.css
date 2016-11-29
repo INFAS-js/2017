@@ -347,7 +347,7 @@ iframe{
 }
 
 #photoframe{
-	width: calc(78vw + 269vh);
+	width: calc(8vw + 255vh);
 	height: 94vh;
 }
 
@@ -364,13 +364,8 @@ iframe{
 .photo{
 	display: inline-block;
 	height: 39vh;
-	margin: 1vh 2vh;
+	margin: 1vh;
 	box-shadow: 5px 5px 5px 1px;
-}
-
-#infas2016web{
-	width: 70vw;
-	height: 75vh;
 }
 
 #photobox1{
@@ -378,25 +373,9 @@ iframe{
 	top: 8vh;
 }
 
-#photobox2{
-	width: 70vw;
-	left: calc(8vw + 133vh);
-	top: 8vh;
-	margin-right: 2vh;
-}
-
 #photobox3{
-	left: calc(78vw + 135vh);
+	left: calc(8vw + 127vh);
 	top: 8vh;
-}
-
-#photobox2>span{
-	display: block;
-	width: 70vw;
-	line-height: 8vh;
-	font-size: 6vh;
-	color: white;
-	text-align: center;
 }
 
 #infas2016link{
@@ -405,8 +384,8 @@ iframe{
 
 #infaslink{
 	display: block;
-	right: 0vw;
-	bottom: 2vh;
+	right: 1vw;
+	bottom: 0vh;
 	text-decoration: none;
 	position: absolute;
 	color: black;
@@ -444,18 +423,12 @@ iframe{
 		height: 98vh;
 		width: 94vw;
 	}
-	#infas2016web{
-		width: 90vw;
-	}
 	#photobox3{
-		left: calc(98vw + 135vh);
+		left: calc(8vw + 127vh);
 		top: 8vh;
 	}
-	#photobox2{
-		width: 90vw;
-	}
 	#photoframe{
-		width: calc(98vw + 269vh);
+		width: calc(8vw + 255vh);
 		height: 94vh;
 	}
 }
