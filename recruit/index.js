@@ -7,6 +7,7 @@ var space = 2;
 var atUpper = 1;
 var min;
 var buttonPercent = 10;
+var groupColor = [0,0,100,200,40,150,270,320];
 function resize(){
 	if (document.documentElement.clientHeight > document.documentElement.clientWidth){
 		min = document.documentElement.clientWidth;
@@ -14,8 +15,11 @@ function resize(){
 	else min = document.documentElement.clientHeight;
 	document.getElementById('group-title').style.fontSize = min/12+"px";
 	document.getElementById('form-title').style.fontSize = min/16+"px";
-	for(let i=1;i<8;i++)
+	for(let i=1;i<8;i++){
 		document.getElementById('group-'+groups[i]).style.fontSize = min/16+"px";
+		document.getElementById(groups[i]+'-page').style.fontSize = min/40+"px";
+		document.getElementById(groups[i]+'-name').style.fontSize = min/16+"px";
+	}
 	document.body.style.fontSize = Math.sqrt(min)/1.6+"px";
 	document.getElementById('leftbutton').style.width = 
 		min*buttonPercent/100+"px";
@@ -36,7 +40,7 @@ function resize(){
 	document.getElementById('updownbutton').style.left = 
 		"calc( 50vw - "+min*buttonPercent/200+"px )";
 	document.getElementById("updownbutton").style.top = 
-		"calc( 100vh - "+min*buttonPercent*(1-!atUpper)/100+"px )";
+		(100-buttonPercent)*(atUpper)+"vh";
 	var titleLogoHeight = 
 		document.getElementById("title-logo").clientHeight;
 	var titleTextHeight = 
@@ -134,28 +138,35 @@ document.addEventListener('keydown',function(){
 })
 for(let i=1;i<8;i++){
 	document.getElementById(groups[i]+'-page').style.opacity = "0";
-	document.getElementById(groups[i]+'-page').style.top = "22vh";
-	document.getElementById(groups[i]+'-page').style.left = "30vw";
-	document.getElementById(groups[i]+'-page').style.width = "40vw";
-	document.getElementById(groups[i]+'-page').style.height = "49vh";
+	document.getElementById(groups[i]+'-page').style.transform = "scale(0.5)";
 	document.getElementById(groups[i]+'-page').style.transition =
 		"all 500ms cubic-bezier(0.17, 0.84, 0.44, 1)";
+	document.getElementById(groups[i]+'-color').style.transition =
+		"all 500ms cubic-bezier(0.17, 0.84, 0.44, 1), fontSize none";
+	document.getElementById(groups[i]+'-color').style.backgroundColor =
+		"hsla("+groupColor[i]+",100%,92%,0.85)";
 	document.getElementById('group-'+groups[i]).addEventListener('click',function(){
 		document.getElementById(groups[i]+'-page').style.opacity = "1";
-		document.getElementById(groups[i]+'-page').style.top = "7vh";
-		document.getElementById(groups[i]+'-page').style.left = "15vw";
-		document.getElementById(groups[i]+'-page').style.width = "70vw";
-		document.getElementById(groups[i]+'-page').style.height = "79vh";
+		document.getElementById(groups[i]+'-page').style.transform = "scale(1)";
 		document.getElementById(groups[i]+'-page').style.pointerEvents = "auto";
-	})
+	});
 	document.getElementById(groups[i]+'-page').addEventListener('click',function(){
 		document.getElementById(groups[i]+'-page').style.opacity = "0";
-		document.getElementById(groups[i]+'-page').style.top = "22vh";
-		document.getElementById(groups[i]+'-page').style.left = "30vw";
-		document.getElementById(groups[i]+'-page').style.width = "40vw";
-		document.getElementById(groups[i]+'-page').style.height = "49vh";
+		document.getElementById(groups[i]+'-page').style.transform = "scale(0.5)";
 		document.getElementById(groups[i]+'-page').style.pointerEvents = "none";
-	})
+	});
+	document.getElementById('group-'+groups[i]).style.backgroundColor = 
+		"hsla("+groupColor[i]+",100%,92%,0.6)";
+	document.getElementById(groups[i]+'-page').style.backgroundColor = 
+			"hsla("+groupColor[i]+",100%,92%,0.5)";
+	document.getElementById('group-'+groups[i]).addEventListener('mouseenter',function(){
+		document.getElementById('group-'+groups[i]).style.backgroundColor = 
+			"hsla("+groupColor[i]+",100%,92%,1)";
+	});
+	document.getElementById('group-'+groups[i]).addEventListener('mouseleave',function(){
+		document.getElementById('group-'+groups[i]).style.backgroundColor = 
+			"hsla("+groupColor[i]+",100%,92%,0.6)";
+	});
 }
 window.onload = function() {
 	resize();
