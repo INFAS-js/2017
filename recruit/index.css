@@ -27,6 +27,14 @@ body{
 	transition: 1000ms;
 }
 
+#loading-page>span{
+	position: absolute;
+	right: 7vw;
+	bottom: 3vh;
+	font-size: 2em;
+	font-family: consolas;
+}
+
 #main{
 	width: 100vw;
 	height: 100vh;
