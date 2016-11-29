@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"po",
+				"pointer-events"
+			],
+			[
+				"sha",
+				"box-shadow"
+			],
+			[
+				"docu",
+				"document"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"block",
+				"inline-block"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
 				"page",
 				"pageAmount"
 			],
@@ -34,10 +70,6 @@
 			[
 				"back",
 				"background-color"
-			],
-			[
-				"pad",
-				"padding-right"
 			],
 			[
 				"margin",
@@ -84,10 +116,6 @@
 				"overflow"
 			],
 			[
-				"bor",
-				"border-color"
-			],
-			[
 				"bord",
 				"border-width"
 			],
@@ -100,16 +128,8 @@
 				"pointer-events"
 			],
 			[
-				"get",
-				"getElementById"
-			],
-			[
 				"repeat",
 				"repeat-x"
-			],
-			[
-				"font-s",
-				"font-style"
 			],
 			[
 				"ba",
@@ -143,7 +163,16 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 1705,
+				"buffer_size": 3483,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/AppServ/www/band/index.html",
+			"settings":
+			{
+				"buffer_size": 5224,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -152,7 +181,7 @@
 			"file": "index.css",
 			"settings":
 			{
-				"buffer_size": 2035,
+				"buffer_size": 3831,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -161,7 +190,7 @@
 			"file": "/C/AppServ/www/MOOCs/index.css",
 			"settings":
 			{
-				"buffer_size": 2647,
+				"buffer_size": 2938,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -178,7 +207,7 @@
 			"file": "index.js",
 			"settings":
 			{
-				"buffer_size": 3774,
+				"buffer_size": 6167,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -246,6 +275,8 @@
 	},
 	"file_history":
 	[
+		"/C/Users/cces4_000/Desktop/DOWNLOAD/test3.c",
+		"/C/Users/cces4_000/Desktop/DOWNLOAD/hackmd_history.mdh",
 		"/C/AppServ/www/band/index.html",
 		"/C/AppServ/www/MOOCs/index.html",
 		"/C/AppServ/www/MOOCs/index.css",
@@ -309,6 +340,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"9",
+			"clickbutton",
+			"#group-",
+			"id:",
+			",id:",
+			"#group-",
+			"\"[^A-z]",
+			"50.25vw",
+			"21.875vh",
+			"21.5vh;",
+			"0.5vh",
+			"50.5vw",
+			"#group-",
+			"!",
 			"buttonPercent/",
 			"min*0.1",
 			"pages[index])",
@@ -374,7 +419,7 @@
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
 		],
@@ -396,15 +441,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1705,
+						"buffer_size": 3483,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								521,
-								226
+								2735,
+								2735
 							]
 						],
 						"settings":
@@ -417,80 +462,16 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 1,
-					"file": "index.css",
+					"file": "/C/AppServ/www/band/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2035,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								295,
-								295
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/AppServ/www/MOOCs/index.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2647,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1302,
-								1302
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 548.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/C/AppServ/www/band/index.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3420,
+						"buffer_size": 5224,
 						"regions":
 						{
 						},
@@ -503,14 +484,14 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 570.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -520,20 +501,113 @@
 			"sheets":
 			[
 				{
-					"buffer": 4,
-					"file": "index.js",
+					"buffer": 2,
+					"file": "index.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3774,
+						"buffer_size": 3831,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3707,
-								3707
+								312,
+								312
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 117.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/AppServ/www/MOOCs/index.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2938,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2938,
+								2938
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1810.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/AppServ/www/band/index.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3420,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								736,
+								704
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 195.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 5,
+					"file": "index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6167,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6161,
+								6161
 							]
 						],
 						"settings":
@@ -542,14 +616,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1404.0,
+						"translation.y": 281.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "/C/AppServ/www/MOOCs/index.js",
 					"semi_transient": false,
 					"settings":
@@ -561,8 +635,8 @@
 						"selection":
 						[
 							[
-								1183,
-								1121
+								756,
+								756
 							]
 						],
 						"settings":
@@ -571,7 +645,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 468.0,
+						"translation.y": 312.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
@@ -582,7 +656,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 21.0
 	},
 	"input":
 	{
@@ -614,13 +688,13 @@
 		"cols":
 		[
 			0.0,
-			0.459007442655,
+			0.416547706198,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
-			0.5,
+			0.458518518519,
 			1.0
 		]
 	},
@@ -633,7 +707,7 @@
 	"project": "/C/AppServ/www/DeemoHarlos/DeemoHarlos.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 38.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -667,7 +741,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 		"last_automatic_layout":

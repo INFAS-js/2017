@@ -1,4 +1,6 @@
 var pages = ["title","goal","groups","form"];
+var groups = ["title","place","create","finance","agenda","sales","PR","record"];
+var groupused = [0,0,0,0,0,0,0,0];
 var curpage = 0;
 var pageAmount = pages.length;
 var space = 2;
@@ -10,6 +12,11 @@ function resize(){
 		min = document.documentElement.clientWidth;
 	}
 	else min = document.documentElement.clientHeight;
+	document.getElementById('group-title').style.fontSize = min/12+"px";
+	document.getElementById('form-title').style.fontSize = min/16+"px";
+	for(let i=1;i<8;i++)
+		document.getElementById('group-'+groups[i]).style.fontSize = min/16+"px";
+	document.body.style.fontSize = Math.sqrt(min)/1.6+"px";
 	document.getElementById('leftbutton').style.width = 
 		min*buttonPercent/100+"px";
 	document.getElementById('leftbutton').style.height = 
@@ -60,9 +67,18 @@ function recalcPosition(a){
 	for(i=0;i<pageAmount-1;i++){
 		document.getElementById(pages[i]).style.left = calcLeft(i,a)+"vw";
 	}
-	if(a==0) document.getElementById('leftbutton').style.opacity = 0;
-	else document.getElementById('leftbutton').style.opacity = 1;
-	if(a==pageAmount-1) document.getElementById('rightbutton').style.opacity = 0;
+	if(a==0) {
+		document.getElementById('leftbutton').style.opacity = 0;
+		document.getElementById('updownbutton').style.opacity = 0;
+	}
+	else {
+		document.getElementById('leftbutton').style.opacity = 1;
+		document.getElementById('updownbutton').style.opacity = 1;
+	}
+	if(a==pageAmount-1) {
+		document.getElementById('rightbutton').style.opacity = 0;
+		document.getElementById('updownbutton').style.opacity = 0;
+	}
 	else document.getElementById('rightbutton').style.opacity = 1;
 }
 document.getElementById('leftbutton').addEventListener('click',function(){
@@ -87,7 +103,7 @@ function verticalPosition(a,b,c,d){
 	}
 }
 document.getElementById('updownbutton').addEventListener('click',function(){
-	if(atUpper){
+	if(atUpper&&curpage>0&&curpage<3){
 		verticalPosition(-100+space,space,0,1);
 	}
 	else{
@@ -97,7 +113,7 @@ document.getElementById('updownbutton').addEventListener('click',function(){
 document.addEventListener('keydown',function(){
 	switch(event.key){
 		case "ArrowDown":
-			verticalPosition(-100+space,space,0,1);
+			if(curpage>0&&curpage<3)verticalPosition(-100+space,space,0,1);
 			break;
 		case "ArrowUp":
 			verticalPosition(0,100-space,1,0);
@@ -116,7 +132,35 @@ document.addEventListener('keydown',function(){
 			break;
 	}
 })
+for(let i=1;i<8;i++){
+	document.getElementById(groups[i]+'-page').style.opacity = "0";
+	document.getElementById(groups[i]+'-page').style.top = "22vh";
+	document.getElementById(groups[i]+'-page').style.left = "30vw";
+	document.getElementById(groups[i]+'-page').style.width = "40vw";
+	document.getElementById(groups[i]+'-page').style.height = "49vh";
+	document.getElementById(groups[i]+'-page').style.transition =
+		"all 500ms cubic-bezier(0.17, 0.84, 0.44, 1)";
+	document.getElementById('group-'+groups[i]).addEventListener('click',function(){
+		document.getElementById(groups[i]+'-page').style.opacity = "1";
+		document.getElementById(groups[i]+'-page').style.top = "7vh";
+		document.getElementById(groups[i]+'-page').style.left = "15vw";
+		document.getElementById(groups[i]+'-page').style.width = "70vw";
+		document.getElementById(groups[i]+'-page').style.height = "79vh";
+		document.getElementById(groups[i]+'-page').style.pointerEvents = "auto";
+	})
+	document.getElementById(groups[i]+'-page').addEventListener('click',function(){
+		document.getElementById(groups[i]+'-page').style.opacity = "0";
+		document.getElementById(groups[i]+'-page').style.top = "22vh";
+		document.getElementById(groups[i]+'-page').style.left = "30vw";
+		document.getElementById(groups[i]+'-page').style.width = "40vw";
+		document.getElementById(groups[i]+'-page').style.height = "49vh";
+		document.getElementById(groups[i]+'-page').style.pointerEvents = "none";
+	})
+}
 window.onload = function() {
 	resize();
-	document.getElementById("loading-page").style.display = "none";
+	document.getElementById("loading-page").style.opacity = "0";
+	setTimeout(function(){
+		document.getElementById("loading-page").style.display = "none";
+	}, 1500);
 }
