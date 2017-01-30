@@ -4,32 +4,32 @@
 <head>
     <meta charset="utf-8">
     <!-- Favicon-->
-    <link rel="icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
     <!-- For iOS-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="apple-touch-icon-precomposed" href="/assets/img/app-icon/icon-60.png">
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/img/app-icon/icon-76.png">
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/img/app-icon/icon-60@2x.png">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/img/app-icon/icon-76@2x.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/img/app-icon/icon-60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="assets/img/app-icon/icon-76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/img/app-icon/icon-60@2x.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/img/app-icon/icon-76@2x.png">
     <!-- libraries-->
-    <script type="text/javascript" src="/js/csv.js"></script>
+    <script type="text/javascript" src="js/csv.js"></script>
     <!-- handlebars-->
-    <script type="text/javascript" src="/js/handlebars-v1.3.0.js"></script>
+    <script type="text/javascript" src="js/handlebars-v1.3.0.js"></script>
     <!-- tabletop.js-->
-    <script type="text/javascript" src="/assets/tabletop/tabletop.js"></script>
+    <script type="text/javascript" src="assets/tabletop/tabletop.js"></script>
     <!-- jquery-->
-    <script type="text/javascript" src="/assets/jquery/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="assets/jquery/jquery-2.1.1.min.js"></script>
     <!-- jquery_ui-->
-    <script type="text/javascript" src="/assets/jquery-ui/1.11.0.custom/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="assets/jquery-ui/1.11.0.custom/jquery-ui.min.js"></script>
     <!-- d3js-->
     <!-- angular-->
     <!-- bootstrap-->
     <!-- semantic ui-->
-    <link rel="stylesheet" type="text/css" href="/assets/semantic-ui/0.19.0/css/semantic.min.css">
-    <script type="text/javascript" src="/assets/semantic-ui/0.19.0/javascript/semantic.min.js"></script>
-    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" type="text/css" href="assets/semantic-ui/0.19.0/css/semantic.min.css">
+    <script type="text/javascript" src="assets/semantic-ui/0.19.0/javascript/semantic.min.js"></script>
+    <link rel="stylesheet" href="css/global.css">
     <title>hackfoldr</title>
 </head>
 
@@ -140,13 +140,14 @@
         <script>
         // prepare to handle url
         var paths = location.pathname.split('/') || [];
-        var ethercalc_name = paths[1] || "infas2017";
+        var ethercalc_name = "2017/hackfoldr";
+        var etherdata = "infas2017"
         var current_iframe_url = paths[2] ? unescape(unescape(paths[2])) : null;
         var history_state = {};
         // prepare to handle backend data (from ethercalc or google spreadsheet)
         var csv_api_source = "";
         var csv_api_source_type = "";
-        var csv_api_source_id = ethercalc_name;
+        var csv_api_source_id = etherdata;
         // prepare to accept foldr options set in ethercalc
         var hide_sheet = false;
         var sort_sheet = true;
@@ -159,10 +160,10 @@
 
         // check where the csv will come from, ethercalc or gsheet?
         if (ethercalc_name.length < 40) {
-            csv_api_source = 'https://ethercalc.org/_/' + ethercalc_name + '/csv';
+            csv_api_source = 'https://ethercalc.org/_/' + etherdata + '/csv';
             csv_api_source_type = "ethercalc";
         } else {
-            csv_api_source = 'docs.google.com/feeds/download/spreadsheets/Export?key=' + ethercalc_name + '&exportFormat=csv&gid=0';
+            csv_api_source = 'docs.google.com/feeds/download/spreadsheets/Export?key=' + etherdata + '&exportFormat=csv&gid=0';
             csv_api_source_type = "google";
             // because posting to gsheet is hard to implement, we don't offer submit feature when using gsheet. since it's easy to moderate editing in gsheet, you can just let users edit or comment on it.
             $("#topbar .add.to.list, #topbar .submit.segment").remove();
@@ -171,7 +172,7 @@
         // let user sort #toc menu by drag and drop, a very user friendly feature suggest by @ipa. using jquery ui sortable. (also, ethercalc only)
         var sort_ethercalc = function(sort_initial_row, sort_target_row) {
                 $.ajax({
-                    url: "https://ethercalc.org/_/" + ethercalc_name,
+                    url: "https://ethercalc.org/_/" + etherdata,
                     contentType: 'text/plain',
                     data: 'moveinsert A' + sort_initial_row + ':F' + sort_initial_row + ' A' + sort_target_row,
                     type: 'POST',
