@@ -3,10 +3,9 @@ setTimeout(function(){
 },50);
 $(window).load(function(){
 	setTimeout(function(){
-		$("#titlepic").css("width","90%");
+		resize();
 		$("#titlepic").css("border-bottom","solid 10px #AAA");
 		$("#titlepic").css("top","0");
-		resize();
 	},1800);
 });
 setTimeout(function(){
@@ -22,9 +21,11 @@ setTimeout(function(){
 $(window).resize(resize);
 //$("#titlepic").load(function(){})
 function resize(){
-	//$("#view").css("height","calc( 100vh"));
+	if($("body").innerWidth()>800)
+		$("#titlepic").css("width","90%");
+	else
+		$("#titlepic").css("width","135%");
 }
-resize();
 function toLecturePage(){
 	$("#form").attr("src","https://goo.gl/forms/QLJzIX3xlCWUfnc92");
 	$("#form").css("display","initial");
@@ -40,7 +41,11 @@ function toClubPage(){
     }, 400);
 }
 function toInfo(){
+	if($("body").innerWidth()>800)
+		target = $("#info").offset().top
+	else
+		target = $("#info-narrow").offset().top
 	$('#view').stop().animate({
-       scrollTop: $("#info").offset().top-$("#title").offset().top
+       scrollTop: target-$("#title").offset().top
     }, 400);
 }
