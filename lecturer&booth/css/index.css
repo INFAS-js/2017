@@ -1,0 +1,184 @@
+/*----------general-----------*/
+@import url(structure.css);
+*{box-sizing: initial;}
+body{
+	margin: 0;
+	font-family: Consolas,微軟正黑體;
+	background-color: #222;
+	color: #DDD;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	font-size: 12pt;
+	height: 100vh;
+}
+#view{
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	padding-top: 15px;
+}
+#view::-webkit-scrollbar {
+	padding:0;
+}
+#view::-webkit-scrollbar-thumb {
+	background-color: rgba(255,255,255,0.4);
+	border-radius: 100px;
+}
+#loading{
+	position: fixed;
+	width:100%;
+	height:100vh;
+	background-color: #222;
+	z-index:70;
+	opacity: 1;
+	transition: all 800ms;
+}
+.page{
+	width: 100%;
+	transition: all 400ms;
+	background-color: #222;
+}
+/*----------title-----------*/
+#title{
+	z-index:50;
+	text-align: center;
+}
+#titlepic{
+	position: fixed;
+	width:135%;
+	padding: 3vw 5% 15px 5%;
+	border-bottom: none;
+	background-color: #222;
+	z-index:80;
+	transition:
+		width 800ms,
+		border 800ms,
+		top 800ms,
+		left 800ms;
+	top:37vh;
+	left:100%;
+}
+#title>div{
+	width:100%;
+}
+.titletext{
+	font-size: 24pt;
+	text-align: center;
+	padding: 40px 0;
+}
+.text{
+	margin: 0 30px;
+	text-align: left;
+}
+span.symbol{color:#69F;}
+span.include{color:#F66;}
+span.preserve{color:#3C6;}
+span.brackets{color:#EC2;}
+span.value{color:#F66;}
+#to-info{
+	position: relative;
+	height:14vh;
+	opacity: 0.4;
+	transition: all 150ms cubic-bezier(.5,1,.5,1);
+	animation: bounce 2s infinite;
+}
+@keyframes bounce{
+	from{top:-2vh;}
+	50%{top:0;}
+	to{top:-2vh;}
+}
+#to-info:hover{
+	transform: scale(1.2);
+	opacity: 1;
+}
+#to-info:active{
+	transform: scale(1.1);
+	opacity: 0.7;
+}
+/*----------photos-----------*/
+#photos{
+	margin-right: 3vw;
+	min-height: 50vh;
+}
+.photo{
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-color: rgba(255,255,255,0.2);
+}
+#A.photo{
+	background-image: url(../pic/photo8.jpg);
+	background-position: center;
+}
+#B.photo{
+	background-image: url(../pic/photo3.jpg);
+	background-position: right center;
+}
+#C.photo{
+	background-image: url(../pic/agenda.jpg);
+	background-position: right center;
+}
+#D.photo{
+	background-image: url(../pic/photo5.jpg);
+	background-position: bottom right;
+}
+#E.photo{
+	background-image: url(../pic/photo4.jpg);
+	background-position: left center;
+}
+#F.photo{
+	background-image: url(../pic/sales.jpg);
+	background-position: left center;
+}
+
+/*----------info-----------*/
+#info{
+	background-color: #222;
+	z-index:40;
+	margin-bottom: 30px
+}
+#lecture-info{
+	min-height: 50vh;
+}
+#infotext{
+	height: calc( 100% - 124px );
+}
+.info-left{
+	border-right: solid 5px rgba(255,255,255,0.4);
+}
+.info-right{
+	border-left: solid 5px rgba(255,255,255,0.4);
+}
+.button{
+	text-align: center;
+	padding:30px 0;
+	position: relative;
+	bottom:0;
+}
+button{margin: 30px 0;}
+#lecture-info{
+	left:0;
+	overflow-x: hidden;
+}
+#form{
+	border-width: 0;
+	transition: all 400ms;
+	z-index: 48;
+	width: 100vw;
+	background-color: #222;
+	height:100%;
+	display:none;
+	margin-top: 20px;
+}
+@media only screen and (max-width: 800px){
+#title>div{
+	-webkit-flex-direction:column;
+	   -moz-flex-direction:column;
+			flex-direction:column;
+}
+.text{margin: 0 50px;}
+#photos{
+	min-height: 60vw;
+	margin:0 3px;
+	display:none;
+}
+}

@@ -10,63 +10,87 @@
 		<meta property="og:url" content=""></meta>
 		<meta property="og:description" content=""></meta>
 		<meta property="og:site_name" content=""></meta>
-		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"/>
-		<link href="index.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+		<link href="css/index.css" rel="stylesheet"/>
 	</head>
-	<body>
-		<div id="title" class="page">
-			<div class="titletext">INFAS 2017 活動講師及攤位招募</div>
-			<div class="text">
-				<p>BALABALABALALA</p>
-				<p>BALABALABALALA</p>
-				<p>BALABALABALALA</p>
-				<p>BALABALABALALA</p>
+	<body class="flex column">
+		<img src="pic/title.png" id="titlepic">
+		<div id="loading"></div>
+		<div id="view">
+			<div id="title" class="page">
+				<div class="flex row">
+					<div class="text avg">
+						<p>
+							<span class="symbol">#</span><span class="include">include</span> &lt;stdio.h&gt;<br>
+							<span class="preserve">main</span><span class="brackets">(){</span><br>
+							　　　　<span class="preserve">printf</span><span class="brackets">(</span>"
+						</p>
+						<p>
+							及是器去易國；式就一生他，舞公香標活什評了春命有許公媽富，以詩消不共望要令大一演，班友這例立的聯真這，母岸也我假把久親。樓燈間用，展訴望喜工城阿的：們的南東別，陽間久小陽高們識初環一紙可口線寶所明運資的，們特子告倒？獲推單林術使，前率過快要風破的一，建讀！<br>
+							來市似面合點是會選前房，量級如吸改山樣題關格就題間流離化！定看城重南功上通年北子下作衣計創第施態太從的她到女灣，自知訴樹的親兩認給雖根動的復查單實工片因一生人住他利一給員結的大業了聽著境萬去告政到而不息民沒為法一子合思們是力藥期負點且車為少元點然操，裡考個二大中面，財地覺教起其進陽相人天上微信？
+						</p>
+						<p>
+							　　　　<span class="symbol">\n</span>"<span class="brackets">)</span>;<br>
+							　　　　<span class="preserve">return</span>&nbsp;<span class="value">0</span>;<br>
+							<span class="brackets">}</span>
+						</p>
+					</div>
+					<div id="photos" class="flex column avg spaced">
+						<div id="A" class="avg photo"></div>
+						<div id="W" class="flex row avg spaced">
+							<div id="B" class="photo"></div>
+							<div id="X" class="flex column spaced">
+								<div id="Y" class="flex row spaced avg">
+									<div id="C" class="photo"></div>
+									<div id="D" class="photo"></div>
+								</div>
+								<div id="Z" class="flex row spaced avg" spaced>
+									<div id="E" class="photo"></div>
+									<div id="F" class="photo"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#info" onclick="toInfo();return false;"><img src="pic/arrow-down.png" class="arrow arrow-down" id="to-info"></a>
 			</div>
-			<div id="info-button" class="button center bottom">
-				<button type="button" class="btn btn-default" onclick="toInfoPage()">前往說明</button>
+			<div id="info" class="page">
+				<div id="infotext" class="flex row">
+					<div id="lecture-info" class="avg info-left">
+						<div class="titletext">講師招募</div>
+						<div class="text">
+							<p>
+								功裡是用……成小們運球請資論參一，影了而；是知市同華故媽西未的友顧都包足的輕背動而使臺子身。<br>
+								無讓化式研他像此有接學現效術哥甚門表。果兒師經市事，下不政樹合感其畫麼現的事；東這不只他；事到以臺機足中也專解你對滿式片大苦深升你變人不所是到快金由。
+							</p>
+						</div>
+					</div>
+					<div id="club-info" class="avg info-right">
+						<div class="titletext">攤位招募</div>
+						<div class="text">
+							<p>
+								生內數人小散我理？<br>
+								型成品此展今想師品往客？<br>
+								食小非除畫在理引增人準現味原了文做這時是例又而腦在因人史生處呢！甚後每，友排們。北保費業大候興她一山！有感且出？自常報不沒案，發不你未。<br>
+								標邊三理定候你參同書停雨力情報種情自布業不、度東我政是。可人電久怎看回所眾我向不。<br>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="flex row">
+					<a href="#form" id="lecture-button" class="button center bottom avg info-left" onclick="toLecturePage();return false;">
+						<button type="button" class="btn btn-default">我想成為講師！</button>
+					</a>
+					<a href="#form" id="club-button" class="button center bottom avg info-right" onclick="toClubPage();return false;">
+		  			<button type="button" class="btn btn-default">我想報名攤位！</button>
+					</a>
+				</div>
 			</div>
+			<iframe id="form" src=""></iframe>
 		</div>
-		<div id="info" class="page">
-			<div id="lecture-info" class="item">
-				<div class="titletext">講師招募</div>
-				<div class="text">
-					<p>BALABALABALALA</p>
-					<p>BALABALABALALA</p>
-					<p>BALABALABALALA</p>
-					<p>BALABALABALALA</p>
-				</div>
-				<div id="lecture-button" class="button center bottom">
-					<button type="button" class="btn btn-default" onclick="toLecturePage()">我想成為講師！</button>
-				</div>
-				<iframe id="lecture-form" class="form" src="https://goo.gl/forms/QLJzIX3xlCWUfnc92"></iframe>
-			</div>
-			<div id="divide"></div>
-			<div id="club-info" class="item">
-				<div class="titletext">攤位招募</div>
-				<div class="text">
-					<p>BALABALABALALA</p
-					<p>BALABALABALALA</p>
-					<p>BALABALABALALA</p>
-					<p>BALABALABALALA</p>
-				</div>
-				<div id="club-button" class="button center bottom">
-  				<button type="button" class="btn btn-default" onclick="toClubPage()">我想報名攤位！</button>
-				</div>
-				<iframe id="club-form" class="form" src="https://goo.gl/forms/7oSZCwwI3qcTwcBW2"></iframe>
-			</div>
-			<div id="back-title-button" class="button center toptag">
-  			<button type="button" class="btn btn-default" onclick="toTitlePage()">回首頁</button>
-			</div>
-			<div id="back-lecture-button" class="button topleft">
-  			<button type="button" class="btn btn-default" onclick="toInfoPage()">回<br>前<br>頁</button>
-			</div>
-			<div id="back-club-button" class="button topright">
-  			<button type="button" class="btn btn-default" onclick="toInfoPage()">回<br>前<br>頁</button>
-			</div>
-		</div>
-		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+		<script src="js/jquery-2.2.4.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
 	</body>
 </html>
