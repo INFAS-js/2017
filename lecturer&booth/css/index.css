@@ -1,6 +1,12 @@
 /*----------general-----------*/
 @import url(structure.css);
-*{box-sizing: initial;}
+*{
+	-webkit-box-sizing: content-box;
+	   -moz-box-sizing: content-box;
+		-ms-box-sizing: content-box;
+		 -o-box-sizing: content-box;
+			box-sizing: content-box;
+}
 body{
 	margin: 0;
 	font-family: Consolas,monospace,微軟正黑體;
@@ -8,7 +14,7 @@ body{
 	color: #DDD;
 	overflow-x: hidden;
 	overflow-y: hidden;
-	font-size: 16pt;
+	font-size: 12pt;
 	height: 100vh;
 }
 #view{
@@ -31,11 +37,33 @@ body{
 	background-color: #222;
 	z-index:70;
 	opacity: 1;
-	transition: all 800ms;
+	-webkit-transition: all 800ms;
+	   -moz-transition: all 800ms;
+		-ms-transition: all 800ms;
+		 -o-transition: all 800ms;
+			transition: all 800ms;
+	font-size:20pt;
+}
+#loading>span{
+	display: block;
+	position: fixed;
+	left:5%;
+	bottom:5vh;
+	-webkit-transition: all 800ms;
+	   -moz-transition: all 800ms;
+		-ms-transition: all 800ms;
+		 -o-transition: all 800ms;
+			transition: all 800ms;
+	opacity: 0;
+	color:#EC2;
 }
 .page{
 	width: 100%;
-	transition: all 400ms;
+	-webkit-transition: all 400ms;
+	   -moz-transition: all 400ms;
+		-ms-transition: all 400ms;
+		 -o-transition: all 400ms;
+			transition: all 400ms;
 	background-color: #222;
 }
 /*----------title-----------*/
@@ -48,13 +76,12 @@ body{
 	width:135%;
 	padding: 3vw 5% 15px 5%;
 	border-bottom: none;
-	background-color: #222;
 	z-index:80;
-	transition:
-		width 800ms,
-		border 800ms,
-		top 800ms,
-		left 800ms;
+	-webkit-transition:all 800ms;
+	   -moz-transition:all 800ms;
+		-ms-transition:all 800ms;
+		 -o-transition:all 800ms;
+			transition:all 800ms;
 	top:37vh;
 	left:100%;
 }
@@ -79,8 +106,36 @@ span.value{color:#F66;}
 	position: relative;
 	height:14vh;
 	opacity: 0.4;
-	transition: all 150ms cubic-bezier(.5,1,.5,1);
-	animation: bounce 2s infinite;
+	-webkit-transition: all 150ms cubic-bezier(.5,1,.5,1);
+	   -moz-transition: all 150ms cubic-bezier(.5,1,.5,1);
+		-ms-transition: all 150ms cubic-bezier(.5,1,.5,1);
+		 -o-transition: all 150ms cubic-bezier(.5,1,.5,1);
+			transition: all 150ms cubic-bezier(.5,1,.5,1);
+	-webkit-animation: bounce 2s infinite;
+	   -moz-animation: bounce 2s infinite;
+		-ms-animation: bounce 2s infinite;
+		 -o-animation: bounce 2s infinite;
+			animation: bounce 2s infinite;
+}
+@-webkit-keyframes bounce{
+	from{top:-2vh;}
+	50%{top:0;}
+	to{top:-2vh;}
+}
+@-moz-keyframes bounce{
+	from{top:-2vh;}
+	50%{top:0;}
+	to{top:-2vh;}
+}
+@-ms-keyframes bounce{
+	from{top:-2vh;}
+	50%{top:0;}
+	to{top:-2vh;}
+}
+@-o-keyframes bounce{
+	from{top:-2vh;}
+	50%{top:0;}
+	to{top:-2vh;}
 }
 @keyframes bounce{
 	from{top:-2vh;}
@@ -88,17 +143,26 @@ span.value{color:#F66;}
 	to{top:-2vh;}
 }
 #to-info:hover{
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	   -moz-transform: scale(1.2);
+		-ms-transform: scale(1.2);
+		 -o-transform: scale(1.2);
+			transform: scale(1.2);
 	opacity: 1;
 }
 #to-info:active{
-	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	   -moz-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		 -o-transform: scale(1.1);
+			transform: scale(1.1);
 	opacity: 0.7;
 }
 /*----------photos-----------*/
 #photos{
 	margin-right: 3vw;
 	min-height: 50vh;
+	max-height: 70vh;
 }
 .photo{
 	background-size:cover;
@@ -140,7 +204,7 @@ span.value{color:#F66;}
 	display: none;
 }
 #lecture-info{
-	min-height: 50vh;
+	min-height: 30vh;
 }
 #infotext{
 	height: calc( 100% - 124px );
@@ -164,7 +228,11 @@ button{margin: 30px 0;}
 }
 #form{
 	border-width: 0;
-	transition: all 400ms;
+	-webkit-transition: all 400ms;
+	   -moz-transition: all 400ms;
+		-ms-transition: all 400ms;
+		 -o-transition: all 400ms;
+			transition: all 400ms;
 	z-index: 48;
 	width: 100vw;
 	background-color: #222;
@@ -177,14 +245,12 @@ body{font-size: 12pt;}
 #title>div{
 	-webkit-flex-direction:column;
 	   -moz-flex-direction:column;
+		-ms-flex-direction:column;
+		 -o-flex-direction:column;
 			flex-direction:column;
 }
 .text{margin: 0 50px;}
-#photos{
-	min-height: 60vw;
-	margin:0 3px;
-	display:none;
-}
+#photos{display:none;}
 .titletext{
 	font-size: 24pt;
 	padding: 15px 0;
@@ -200,4 +266,7 @@ body{font-size: 12pt;}
 	text-align: center;
 }
 button{margin:0;}
+}
+@media only screen and (min-width: 1400px){
+body{font-size: 16pt;}
 }

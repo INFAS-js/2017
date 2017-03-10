@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"i",
+				"initial"
+			],
+			[
+				"tr",
+				"transition"
+			],
+			[
+				"bor",
+				"border-right-style"
+			],
+			[
+				"backgr",
+				"background-image"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"tra",
+				"transition"
+			],
+			[
 				"back",
 				"background-color"
 			],
@@ -52,10 +80,6 @@
 				"inline-block"
 			],
 			[
-				"margin",
-				"margin-top"
-			],
-			[
 				"bak",
 				"background-image"
 			],
@@ -96,16 +120,8 @@
 				"inline-block"
 			],
 			[
-				"bor",
-				"border-radius"
-			],
-			[
 				"page",
 				"pageAmount"
-			],
-			[
-				"tra",
-				"transform"
 			],
 			[
 				"sca",
@@ -150,10 +166,6 @@
 			[
 				"fonts",
 				"font-size"
-			],
-			[
-				"box",
-				"box-shadow"
 			],
 			[
 				"overflow",
@@ -204,10 +216,19 @@
 	"buffers":
 	[
 		{
-			"file": "index.css",
+			"file": "css/structure.css",
 			"settings":
 			{
-				"buffer_size": 1619,
+				"buffer_size": 1257,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/index.css",
+			"settings":
+			{
+				"buffer_size": 3497,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -216,16 +237,16 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 3217,
+				"buffer_size": 4897,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "index.js",
+			"file": "js/index.js",
 			"settings":
 			{
-				"buffer_size": 1637,
+				"buffer_size": 1374,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -284,8 +305,16 @@
 	},
 	"file_history":
 	[
-		"/D/projects/INFAS/2017/index.html",
+		"/D/projects/INFAS/2017/recruit/index.css",
+		"/D/projects/INFAS/2017/lecturer&booth/css/index.css",
+		"/D/projects/INFAS/2017/lecturer&booth/js/load.js",
 		"/D/projects/INFAS/2017/lecturer&booth/structure.css",
+		"/D/projects/INFAS/2017/lecturer&booth/index.css",
+		"/D/projects/INFAS/2017/lecturer&booth/index.js",
+		"/D/projects/INFAS/2017/lecturer&booth/js/jquery-2.2.4.min.js",
+		"/D/projects/PPPPPP/index.js",
+		"/D/projects/DeemoHarlos/css/structure.css",
+		"/D/projects/INFAS/2017/index.html",
 		"/D/projects/INFAS/2017/style.css",
 		"/C/AppServ/www/band/index.css",
 		"/C/AppServ/www/band/index.html",
@@ -453,24 +482,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "index.css",
+					"file": "css/structure.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1619,
+						"buffer_size": 1257,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								279,
-								279
+								908,
+								908
 							]
 						],
 						"settings":
@@ -479,10 +508,39 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 945.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "css/index.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3497,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3497,
+								3497
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3030.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -492,20 +550,20 @@
 			"sheets":
 			[
 				{
-					"buffer": 1,
+					"buffer": 2,
 					"file": "index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3217,
+						"buffer_size": 4897,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2349,
-								2349
+								909,
+								909
 							]
 						],
 						"settings":
@@ -515,7 +573,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2025.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -528,24 +586,20 @@
 			"sheets":
 			[
 				{
-					"buffer": 2,
-					"file": "index.js",
+					"buffer": 3,
+					"file": "js/index.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1637,
+						"buffer_size": 1374,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1558,
-								1558
-							],
-							[
-								1608,
-								1608
+								1232,
+								1232
 							]
 						],
 						"settings":
@@ -554,10 +608,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 446.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -597,13 +651,13 @@
 		"cols":
 		[
 			0.0,
-			0.322111395802,
+			0.409959126402,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
-			0.637777777778,
+			0.677777777778,
 			1.0
 		]
 	},
@@ -650,7 +704,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 2,
+	"selected_group": 0,
 	"settings":
 	{
 		"last_automatic_layout":

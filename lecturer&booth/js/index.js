@@ -1,25 +1,47 @@
+if(!String.prototype.includes) {
+	String.prototype.includes = function() {
+         'use strict';
+         return String.prototype.indexOf.apply(this, arguments) !== -1;
+     };
+ }
+var isIE = !(navigator.userAgent.includes("Chrome")||
+			navigator.userAgent.includes("Opera")||
+			navigator.userAgent.includes("Safari")||
+			navigator.userAgent.includes("Edge")||
+			navigator.userAgent.includes("AppleWebKit"));
+var edgeTime = navigator.userAgent.includes("Edge")*-600;
 setTimeout(function(){
 	$("#titlepic").css("left","0");
 },50);
 $(window).load(function(){
+	if(isIE){
+		$("#titlepic").css("width","90%");
+		setTimeout(function(){
+			$("#loading").html(
+				"<span>Please browse this webpage with another browser.<br><span class=\"preserve\">Google Chrome</span> is highly recommended.</span>");
+			setTimeout(function(){
+				$("#loading>span").css("opacity","1");
+			},50);
+		},800);
+		return;
+	}
 	setTimeout(function(){
 		resize();
 		$("#titlepic").css("border-bottom","solid 10px #AAA");
 		$("#titlepic").css("top","0");
-	},1800);
+	},1600+edgeTime);
+	setTimeout(function(){
+		$("body").css("overflow-y","initial");
+		$("#loading").css("opacity","0");
+		$("#titlepic").css("position","initial");
+		resize();
+	},2400+edgeTime);
+	setTimeout(function(){
+		$("#loading").css("display","none");
+		resize();
+	},3200+edgeTime);
+	$(window).resize(resize);
 });
-setTimeout(function(){
-	$("body").css("overflow-y","initial");
-	$("#loading").css("opacity","0");
-	$("#titlepic").css("position","initial");
-	resize();
-},2600);
-setTimeout(function(){
-	$("#loading").css("display","none");
-	resize();
-},3400);
-$(window).resize(resize);
-//$("#titlepic").load(function(){})
 function resize(){
 	if($("body").innerWidth()>800)
 		$("#titlepic").css("width","90%");
@@ -49,3 +71,4 @@ function toInfo(){
        scrollTop: target-$("#title").offset().top
     }, 400);
 }
+console.log(navigator.userAgent);
