@@ -103,6 +103,10 @@ span.preserve{color:#3C6;}
 span.brackets{color:#EC2;}
 span.value{color:#F66;}
 .text>p>*{position: relative;}
+#title>*>.text>p{
+	border-left:solid 5px #6C6;
+	padding-left: 5px;
+}
 .text>p>span>.line{
 	color:#888;
 	display: inline-block;
@@ -110,7 +114,6 @@ span.value{color:#F66;}
 	text-align: right;
 	left: -3em;
 	width: 2em;
-	border-right:solid 5px #6C6;
 	padding-right: 4px;
 }
 #to-info{
