@@ -99,11 +99,11 @@ body{
 	margin: 0 30px 0 50px;
 	text-align: left;
 }
-span.symbol{color:#69F;}
-span.include{color:#F66;}
-span.preserve{color:#3C6;}
-span.brackets{color:#EC2;}
-span.value{color:#F66;}
+.symbol{color:#69F;}/*blue*/
+.include{color:#F66;}/*red*/
+.preserve{color:#3C6;}/*green*/
+.brackets{color:#EC2;}/*yellow*/
+.value{color:#F66;}/*red*/
 .text>p>*{position: relative;}
 #title>*>.text>p{
 	border-left:solid 5px #6C6;
@@ -278,6 +278,10 @@ span.value{color:#F66;}
 .info-right{
 	border-left: solid 5px rgba(255,255,255,0.4);
 }
+th,td{
+	text-align: center;
+	background-color: rgba(255,255,255,0.1)
+}
 .button{
 	text-align: center;
 	padding:30px 0;
@@ -288,7 +292,6 @@ button{
     margin: 30px 0;
     padding: 15px;
     font-size: 16pt;
-    background-color: #FF9;
     border: none;
     border-radius: 5px;
 	-webkit-transition: background-color 200ms;
@@ -297,11 +300,17 @@ button{
 		 -o-transition: background-color 200ms;
 			transition: background-color 200ms;
 }
-button:hover{
-	background-color: #CFC;
+#club-button>a>button{
+	background-color: #FF9;
 }
-button:active{
-	background-color: #292;
+#lecture-button>a>button{
+	background-color: #9CF;
+}
+.button>a>button:hover{
+	background-color: #9F9!important;
+}
+.button>a>button:active{
+	background-color: #292!important;
 }
 #lecture-info{
 	left:0;
@@ -330,7 +339,7 @@ body{font-size: 12pt;}
 		 -o-flex-direction:column;
 			flex-direction:column;
 }
-.text{margin: 0 50px 0 70px;}
+.text{margin: 0 3vw 0 7vw;}
 #photos{display:none;}
 .titletext{
 	font-size: 24pt;
