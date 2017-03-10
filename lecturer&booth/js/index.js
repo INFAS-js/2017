@@ -9,7 +9,6 @@ var isIE = !(navigator.userAgent.includes("Chrome")||
 			navigator.userAgent.includes("Safari")||
 			navigator.userAgent.includes("Edge")||
 			navigator.userAgent.includes("AppleWebKit"));
-var edgeTime = navigator.userAgent.includes("Edge")*-600;
 setTimeout(function(){
 	$("#titlepic").css("left","0");
 },50);
@@ -29,17 +28,17 @@ $(window).load(function(){
 		resize();
 		$("#titlepic").css("border-bottom","solid 10px #AAA");
 		$("#titlepic").css("top","0");
-	},1600+edgeTime);
+	},1600);
 	setTimeout(function(){
 		$("body").css("overflow-y","initial");
 		$("#loading").css("opacity","0");
 		$("#titlepic").css("position","initial");
 		resize();
-	},2400+edgeTime);
+	},2400);
 	setTimeout(function(){
 		$("#loading").css("display","none");
 		resize();
-	},3200+edgeTime);
+	},3200);
 	$(window).resize(resize);
 });
 function resize(){

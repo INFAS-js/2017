@@ -94,7 +94,7 @@ body{
 	padding: 40px 0;
 }
 .text{
-	margin: 0 30px;
+	margin: 0 30px 0 50px;
 	text-align: left;
 }
 span.symbol{color:#69F;}
@@ -102,6 +102,17 @@ span.include{color:#F66;}
 span.preserve{color:#3C6;}
 span.brackets{color:#EC2;}
 span.value{color:#F66;}
+.text>p>*{position: relative;}
+.text>p>span>.line{
+	color:#888;
+	display: inline-block;
+	position: absolute;
+	text-align: right;
+	left: -3em;
+	width: 2em;
+	border-right:solid 5px #6C6;
+	padding-right: 4px;
+}
 #to-info{
 	position: relative;
 	height:14vh;
@@ -249,7 +260,7 @@ body{font-size: 12pt;}
 		 -o-flex-direction:column;
 			flex-direction:column;
 }
-.text{margin: 0 50px;}
+.text{margin: 0 50px 0 70px;}
 #photos{display:none;}
 .titletext{
 	font-size: 24pt;
@@ -270,6 +281,6 @@ button{margin:0;}
 }
 @media only screen and (min-width: 1400px){
 body{font-size: 16pt;}
-.text{margin: 0 80px;}
+.text{margin: 0 80px 0 100px;}
 #view{padding-top: 45px;}
 }
