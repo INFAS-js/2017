@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"t",
+				"tbody\tTag"
+			],
+			[
 				"pad",
 				"padding-left"
 			],
@@ -236,7 +240,7 @@
 			"file": "css/index.css",
 			"settings":
 			{
-				"buffer_size": 6992,
+				"buffer_size": 7197,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -245,7 +249,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 6075,
+				"buffer_size": 8035,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -376,7 +380,7 @@
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 44.0
 	},
 	"find_in_files":
 	{
@@ -530,15 +534,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6992,
+						"buffer_size": 7197,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5936,
-								5936
+								5647,
+								5647
 							]
 						],
 						"settings":
@@ -547,10 +551,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4096.0,
+						"translation.y": 5145.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -565,19 +569,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6075,
+						"buffer_size": 8035,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4174,
-								4174
-							],
-							[
-								4372,
-								4372
+								7978,
+								7932
 							]
 						],
 						"settings":
@@ -587,10 +587,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1440.0,
+						"translation.y": 729.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -612,8 +612,8 @@
 						"selection":
 						[
 							[
-								1466,
-								1466
+								1634,
+								1527
 							]
 						],
 						"settings":
@@ -622,10 +622,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 495.0,
+						"translation.y": 972.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -633,7 +633,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 36.0
 	},
 	"input":
 	{
@@ -665,13 +665,13 @@
 		"cols":
 		[
 			0.0,
-			0.316254880428,
+			0.413650713761,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
-			0.514814814815,
+			0.599291102772,
 			1.0
 		]
 	},
@@ -684,7 +684,7 @@
 	"project": "2017.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 68.0
 	},
 	"save_all_on_build": true,
 	"select_file":

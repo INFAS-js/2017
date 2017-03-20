@@ -8,6 +8,7 @@ var isIE = !(navigator.userAgent.includes("Chrome")||
 			navigator.userAgent.includes("Opera")||
 			navigator.userAgent.includes("Safari")||
 			navigator.userAgent.includes("Edge")||
+			navigator.userAgent.includes("Firefox")||
 			navigator.userAgent.includes("AppleWebKit"));
 setTimeout(function(){
 	$("#titlepic").css("left","0");
