@@ -1,11 +1,31 @@
 body{
-	background-image: url("bg.png")
+	background-image: url("bg.png");
+	height:100vh;
 }
 #title{
-	background-image: url("title.png");
-	width: calc(100% - 40px);
-	height:100px;
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin: 20px;
+}
+#title>img{
+	width:100%;
+	max-width: 625px;
+	display: block;
+}
+#content{
+	margin: 0 20px 20px 20px;
+	border-radius: 10px;
+	background-color: rgba(224,224,255,0.2);
+}
+#navbar{
+	padding: 20px;
+}
+.button{
+	border-radius: 5px;
+	padding: 5px;
+	background-color: #BBF;
+	text-align: center;
+}
+.button:hover{
+	background-color: #FFB;
 }
