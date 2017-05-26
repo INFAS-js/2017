@@ -1,0 +1,11 @@
+body{
+	background-image: url("bg.png")
+}
+#title{
+	background-image: url("title.png");
+	width: calc(100% - 40px);
+	height:100px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 20px;
+}
