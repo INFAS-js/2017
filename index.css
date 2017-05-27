@@ -1,7 +1,22 @@
+@import url(structure.css);
 body{
+	background-color: #333;
 	background-image: url("bg.png");
 	height:100vh;
+	font-size: 16pt;
+	font-family: Consolas,sans-serif;
+	color:white;
 }
+a{
+	text-decoration: none;
+	color:inherit;
+}
+.blue{color:#69F;}/*blue*/
+.red{color:#F66;}/*red*/
+.green{color:#2A4;}/*green*/
+.yellow{color:#EC2;}/*yellow*/
+.gray{color:#CCC;}/*gray*/
+
 #title{
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -13,12 +28,13 @@ body{
 	display: block;
 }
 #content{
-	margin: 0 20px 20px 20px;
+	margin: 0 30px 30px 30px;
 	border-radius: 10px;
 	background-color: rgba(224,224,255,0.2);
 }
 #navbar{
 	padding: 20px;
+	color:black;
 }
 .button{
 	border-radius: 5px;
@@ -26,6 +42,53 @@ body{
 	background-color: #BBF;
 	text-align: center;
 }
-.button:hover{
+.button:hover,.button:focus{
 	background-color: #FFB;
+}
+#content-box{
+	overflow-y:scroll; 
+	padding: 0 30px 30px 30px;
+}
+#content-box>div:not(:first-child){
+	display: none;
+}
+.title{
+	font-size: 150%;
+}
+#agenda>table,#agenda th,#agenda td{
+	border-collapse: separate;
+	border-spacing: 3px;
+}
+#agenda th{
+	background-color: rgba(0,0,0,0.4);
+	font-weight: normal;
+	font-size: 75%;
+}
+#agenda td{
+	background-color: rgba(0,0,0,0.3);
+	padding: 5px 15px;
+}
+#agenda td:not(:first-child):hover{
+	background-color: rgba(255,255,255,0.1);
+}
+#agenda td:first-child{
+	font-size: 75%;
+	text-align: center;
+}
+#agenda td>i{
+	font-size: 75%
+}
+p.eng{
+	font-family: Verdana;
+	line-height: 150%;
+}
+#trans{
+	height: 100%;
+}
+#sponsor,#sponsor>div{
+	text-align: center;
+	height: 100%;
+}
+#sponsor img{
+	width: 48%;
 }

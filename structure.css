@@ -32,10 +32,17 @@
 .spaced.row>*{margin-right:20px;}
 .spaced.column>*:last-child{margin-bottom:0;}
 .spaced.row>*:last-child{margin-right:0;}
-.flex>.fill,.flex.avg>div{
+.flex>.fill,.flex.avg>*{
 	-webkit-flex:1 0 0;
 	   -moz-flex:1 0 0;
 		-ms-flex:1 0 0;
 		 -o-flex:1 0 0;
 			flex:1 0 0;
+}
+#content-box::-webkit-scrollbar {
+	padding:0;
+}
+#content-box::-webkit-scrollbar-thumb {
+	background-color: rgba(255,255,255,0.4);
+	border-radius: 100px;
 }

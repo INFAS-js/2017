@@ -317,8 +317,8 @@
 	},
 	"file_history":
 	[
-		"/D/projects/INFAS/2017/recruit/index.css",
 		"/D/projects/INFAS/2017/lecturer&booth/css/index.css",
+		"/D/projects/INFAS/2017/recruit/index.css",
 		"/D/projects/INFAS/2017/lecturer&booth/js/load.js",
 		"/D/projects/INFAS/2017/lecturer&booth/structure.css",
 		"/D/projects/INFAS/2017/lecturer&booth/index.css",
@@ -380,7 +380,7 @@
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -497,7 +497,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -523,10 +523,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 420.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -542,8 +542,8 @@
 						"selection":
 						[
 							[
-								271,
-								271
+								6077,
+								6079
 							]
 						],
 						"settings":
@@ -552,10 +552,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 5985.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -577,8 +577,8 @@
 						"selection":
 						[
 							[
-								329,
-								329
+								3608,
+								3620
 							]
 						],
 						"settings":
@@ -588,10 +588,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1752.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -672,7 +672,7 @@
 		"rows":
 		[
 			0.0,
-			0.599291102772,
+			0.72416316009,
 			1.0
 		]
 	},
