@@ -10,6 +10,8 @@
 		<meta property="og:site_name" content="www.infas-js.club"></meta>
 		<link rel="icon" href="favicon.png">
 		<link href="index.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="leaflet/leaflet.css" />
+		<script src="leaflet/leaflet.js"></script>
 	</head>
 	<body class="flex column">
 		<div id="title"><img src="title.png"></div>
@@ -54,13 +56,60 @@
 								<td>10:20 - 11:00</td>
 								<td colspan="2">
 									<a href="#"><b class="blue">名人開講</b> <i class="gray">徐千洋</i><br>從駭客入侵談學習之路</a>
-									<div></div>
+									<div class="flex row">
+										<div id="lec1"></div>
+										<div>
+											<p>
+												<span class="title yellow">從駭客入侵談學習之路 </span>
+												<span class="blue">徐千洋</span><br>
+												本演講將展示駭客入侵網站的整個流程，從中說明整個入侵過程中需要用到的資安技術，並給予學習方向的建議。請注意，本演講著重在資安技術學習的方式，並非教導各為如何入侵電腦。
+											</p>
+											<p>
+												<span class="green">關於講師</span><br>
+												台灣資安技術社群 CHROOT 創辦人、台灣駭客年會 HITCON 創辦人、曾創辦網駭科技資安公司，擔任過台灣大哥大資安技術部經理，目前任職於美商 vArmour 資深工程師。著有駭客訓練基地、Linux C 函式庫詳解辭典等書。
+											</p>
+										</div>
+									</div>
 								</td>
 							</tr>
 							<tr>
 								<td>10:20 - 11:00</td>
-								<td><b class="green">主題演講</b> <i class="gray">蔡闊光</i><br>深入淺出人工智慧</td>
-								<td><b class="green">主題演講</b> <i class="gray">楊志璿</i><br>帳號又被盜了</td>
+								<td>
+									<a href="#"><b class="green">主題演講</b> <i class="gray">蔡闊光</i><br>深入淺出人工智慧</a>
+									<div class="flex row">
+										<div id="lec2"></div>
+										<div>
+											<p>
+												<span class="title yellow">深入淺出人工智慧 </span>
+												<span class="blue">蔡闊光</span><br>
+												人工智慧 ( AI ) 可能是最近電資界最令人感到有興趣的話題之一，在 Google 開放免費試用其雲端 GPU 伺服器和釋出了更多了演算法後，我們其實可以很輕易的實現人工智慧。那我們會探討人工智慧的過去現在與未來，我們除了探討人工智慧的，也會跟各位分享如何使用 Machine Learning 中的 Deep learning 來分析處理資料。
+											</p>
+											<p>
+												<span class="green">關於講師</span><br>
+												台中二中電研百七級附社兼教學，活躍在中部。<br>
+												擅長項目有 C++、Java、Arduino、Linux 應用、及伺服器維護與系統弱點研究。
+											</p>
+										</div>
+									</div>
+								</td>
+								<td>
+									<a href="#"><b class="green">主題演講</b> <i class="gray">楊志璿</i><br>帳號又被盜了</a>
+									<div class="flex row">
+										<div id="lec3"></div>
+										<div>
+											<p>
+												<span class="title yellow">帳號又被盜了 </span>
+												<span class="blue">楊志璿</span><br>
+												資訊科技的爆脹，新世代的來臨，充滿無限挑戰與契機。個人隱私，資訊安全更是不容忽視的重要課題。縱然網路便利性，但，安全嗎？帳號密碼存在意義亟需重新審視，工業革命 4.0 已經開始，人人資安，不。容。懈。怠。
+											</p>
+											<p>
+												<span class="green">關於講師</span><br>
+												楊志璿 ( SheepCatCat )，在嘉中任職學測榜單戰士、107 級廢文王。致力於推廣資訊普及教育，並引起朋友對周遭事物的求知慾。<br>
+												余經歷不多不多！多乎哉？不多也。偶而喜歡跳痛的花瓜麵筋夾起司蛋糕，但不可拍打餵食。
+											</p>
+										</div>
+									</div>
+								</td>
 							</tr>
 							<tr class="center">
 								<td>12:00 - 13:20</td>
@@ -68,12 +117,70 @@
 							</tr>
 							<tr>
 								<td>13:30 - 14:10</td>
-								<td><b class="green">主題演講</b> <i class="gray">Deemo</i><br>資訊世界的大門</td>
-								<td><b class="green">主題演講</b> <i class="gray">小米</i><br>第一次 C++ 寫遊戲就上手 - 淺談 OpenGL</td>
+								<td>
+									<a href="#"><b class="green">主題演講</b> <i class="gray">Deemo</i><br>資訊世界的大門</a>
+									<div class="flex row">
+										<div id="lec4"></div>
+										<div>
+											<p>
+												<span class="title yellow">資訊世界的大門 </span>
+												<span class="blue">Deemo</span><br>
+												給資訊初學者的引導，讓想要接觸資訊領域的初學者能夠走在正確的方向，如何在這個網路、資訊爆炸的年代，做出正確的選擇，讓自己變得更強。
+											</p>
+											<p>
+												<span class="green">關於講師</span><br>
+												國立台灣大學 資訊工程學系 一年級<br>
+												國立科學工業園區實驗高級中學 科學班 畢業<br>
+												曾經擔任 SITCON CAMP 2016、2017 隊輔組，以及 INFAS 2016、2017 副召<br>
+												興趣是打 code、做音樂，也寫過一些前端網頁，喜歡睡覺喜歡吃~
+											</p>
+										</div>
+									</div>
+								</td>
+								<td>
+									<a href="#"><b class="green">主題演講</b> <i class="gray">小米</i><br>第一次 C++ 寫遊戲就上手 - 淺談 OpenGL</a>
+									<div class="flex row">
+										<div id="lec5"></div>
+										<div>
+											<p>
+												<span class="title yellow">第一次 C++ 寫遊戲就上手 - 淺談 OpenGL </span>
+												<span class="blue">小米</span><br>
+												想知道 C++ 如何撰寫跨平台遊戲嗎？<br>
+												想知道如何讓電腦簡單畫出 3D 圖形嗎？<br>
+												這場議程，你將在 50 分鐘內藉由兩個程式的實作一窺其中的奧妙，講者也會分享自己的開發經驗及學習過程。<br>
+												議程末，程式將開源於 Github。
+											</p>
+											<p>
+												<span class="green">關於講師</span><br>
+												爆肝的弱弱高職生<br>
+												目前程式設計經驗 7 年<br>
+												接觸社團和社群後嘗試推廣資訊領域到一般學生<br>
+												堅持「C++ 即是真理，C++ 即是世界」<br>
+												技能樹到處亂點下越長越歪，不過本人打算讓它繼續歪下去
+											</p>
+										</div>
+									</div>
+								</td>
 							</tr>
 							<tr>
 								<td>14:15 - 14:45</td>
-								<td colspan="2"><b class="green">主題演講</b> <i class="gray">Ray</i><br>震驚全校的謊言 - 細談釣魚網站實作</td>
+								<td colspan="2">
+									<a href="#"><b class="green">主題演講</b> <i class="gray">Ray</i><br>震驚全校的謊言 - 細談釣魚網站實作</a>
+									<div class="flex row">
+										<div id="lec6"></div>
+										<div>
+											<p>
+												<span class="title yellow">震驚全校的謊言 - 細談釣魚網站實作 </span>
+												<span class="blue">Ray</span><br>
+												釣魚式攻擊(簡稱網釣)，是一種企圖從電子通訊中，透過偽裝成信譽卓著的法人媒體以獲得個人敏感資訊的犯罪詐騙過程，常透過網站偽造等方式實現。若將它應用於現實中，成效又如何呢?講者與校方合作，秘密地偽造一個釣魚網站並透過郵件偽造送給每位同學，觀察同學登入狀況及其資安意識。在今天的報告中，講者將揭露各年齡層、性別受試者的受試結果，還有破解反釣魚保護的爆肝歷程。
+											</p>
+											<p>
+												<span class="green">關於講師</span><br>
+												庸奴！此何地也，而汝前來！程式之蟲，氾濫至此，老夫已矣！汝復輕身而昧大義，天下事誰可支拄者？不速去，無俟PM構陷，吾今即撲殺汝！
+											</p>
+										</div>
+									</div>
+								</td>
 							</tr>
 							<tr class="center">
 								<td>14:45 - 15:50</td>
@@ -81,8 +188,43 @@
 							</tr>
 							<tr>
 								<td>16:00 - 16:40</td>
-								<td><b class="green">主題演講</b> <i class="gray">Allen Chou</i><br>淺談電子投票的技術與困境</td>
-								<td><b class="green">主題演講</b> <i class="gray">陳冠辰</i><br>App帶著創意上雲端</td>
+								<td>
+									<a href="#"><b class="green">主題演講</b> <i class="gray">Allen Chou</i><br>淺談電子投票的技術與困境</a>
+									<div class="flex row">
+										<div id="lec7"></div>
+										<div>
+											<p>
+												<span class="title yellow">淺談電子投票的技術與困境 </span>
+												<span class="blue">Allen Chou</span><br>
+												電子投票聽起來就是一個潮到出水的新玩意，但我們真的瞭解那是什麼嗎？我將用半個小時的時間對電子投票做非常粗淺的介紹，包含背後的技術，政治上的困難等等。<br>
+												放心，不會提到密碼學的，因為就算有我也不會告訴你。
+											</p>
+											<p>
+												<span class="green">關於講師</span><br>
+												一個普普通通的高中生兼技術宅，熱愛程式的世界，平時喜歡寫寫網站，研究各種新技術，每天膩在 0 與 1 中無法自拔，除了 Coding 以外無所事事。
+											</p>
+										</div>
+									</div>
+								</td>
+								<td>
+									<a href="#"><b class="green">主題演講</b> <i class="gray">陳冠辰</i><br>App帶著創意上雲端</a>
+									<div class="flex row">
+										<div id="lec8"></div>
+										<div>
+											<p>
+												<span class="title yellow">App帶著創意上雲端 </span>
+												<span class="blue">陳冠辰</span><br>
+												本次內容是在介紹Firebase這個Google 後端服務也有實作的部分，歡迎喜歡寫前端或是有一些創意點子的大家一起聆聽。
+											</p>
+											<p>
+												<span class="green">關於講師</span><br>
+												我是去年五子棋人工智慧講師<br>
+												對程式有興趣<br>
+												請大家多多指教
+											</p>
+										</div>
+									</div>
+								</td>
 							</tr>
 							<tr class="center">
 								<td>16:50 - 17:20</td><td colspan="2"><b class="red">閉幕式</b></td>
@@ -119,7 +261,9 @@
 				</div>
 
 				<div id="trans">
-					<iframe width="100%" height="90%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=121.01136803627016%2C24.7741882244189%2C121.02141022682191%2C24.78124081368001&amp;layer=mapnik" style="border: none;"></iframe>
+					<div id="map">
+						
+					</div>
 				</div>
 
 				<div id="sponsor"><div class="flex column">
@@ -165,11 +309,6 @@
 
 			</div>
 		</div>
-
-
-
-
-
 		<script type="text/javascript" src="index.js"></script>
 	</body>
 </html>
