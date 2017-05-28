@@ -228,15 +228,6 @@
 	"buffers":
 	[
 		{
-			"file": "/D/projects/resume/structure.css",
-			"settings":
-			{
-				"buffer_size": 2295,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "css/index.css",
 			"settings":
 			{
@@ -246,10 +237,18 @@
 			}
 		},
 		{
+			"file": "css/structure.css",
+			"settings":
+			{
+				"buffer_size": 1883,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 8138,
+				"buffer_size": 8131,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -317,6 +316,7 @@
 	},
 	"file_history":
 	[
+		"/D/projects/resume/structure.css",
 		"/D/projects/INFAS/2017/lecturer&booth/css/index.css",
 		"/D/projects/INFAS/2017/recruit/index.css",
 		"/D/projects/INFAS/2017/lecturer&booth/js/load.js",
@@ -502,35 +502,6 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/D/projects/resume/structure.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2295,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "css/index.css",
 					"semi_transient": false,
 					"settings":
@@ -542,8 +513,8 @@
 						"selection":
 						[
 							[
-								6077,
-								6079
+								4757,
+								4757
 							]
 						],
 						"settings":
@@ -552,7 +523,36 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 5985.0,
+						"translation.y": 4374.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "css/structure.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1883,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								977,
+								977
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 528.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -570,15 +570,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8138,
+						"buffer_size": 8131,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3608,
-								3620
+								2745,
+								2745
 							]
 						],
 						"settings":
@@ -588,7 +588,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1752.0,
+						"translation.y": 1092.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,

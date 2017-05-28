@@ -47,13 +47,26 @@ a{
 }
 #content-box{
 	overflow-y:scroll; 
-	padding: 0 30px 30px 30px;
+	padding: 0 15px 30px 30px;
+	position: relative;
+}
+#content-box>div{
+	width: 100%;
 }
 #content-box>div:not(:first-child){
 	display: none;
 }
 .title{
 	font-size: 150%;
+}
+#agenda{
+	height: 100%;
+}
+#agenda>div{
+	margin: auto;
+	width:100%;
+	max-width: 900px;
+	height: 100%;
 }
 #agenda>table,#agenda th,#agenda td{
 	border-collapse: separate;
@@ -78,6 +91,35 @@ a{
 #agenda td>i{
 	font-size: 75%
 }
+#agenda .center>td{
+	text-align: center;
+}
+#agenda a{
+	display: block;
+}
+#agenda a + div{
+	position: absolute;
+	width:calc(100% - 15px);
+	height:calc(100% - 15px);
+	top: 0;
+	left:15px;
+	background-color:rgba(0,0,0,0.8);
+	border-radius: 20px;
+	opacity: 0;
+	transform: scale(0);
+	transition: all 300ms;
+}
+#agenda a:focus + div{
+	opacity: 1;
+	transform: scale(1);
+}
+
+
+
+
+
+
+
 p.eng{
 	font-family: Verdana;
 	line-height: 150%;
@@ -90,5 +132,50 @@ p.eng{
 	height: 100%;
 }
 #sponsor img{
-	width: 48%;
+	width: 75%;
+	padding-top: 20px;
+}
+
+/*----------photos-----------*/
+#history,#history>div{
+	height: 100%;
+}
+#photos *{
+	-webkit-transition: all 300ms;
+	   -moz-transition: all 300ms;
+		-ms-transition: all 300ms;
+		 -o-transition: all 300ms;
+			transition: all 300ms;
+}
+.photo{
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-color: rgba(255,255,255,0.2);
+}
+#A.photo{
+	background-image: url(photo8.jpg);
+	background-position: center;
+}
+#B.photo{
+	background-image: url(photo3.jpg);
+	background-position: right center;
+}
+#C.photo{
+	background-image: url(agenda.jpg);
+	background-position: right center;
+}
+#D.photo{
+	background-image: url(photo5.jpg);
+	background-position: bottom right;
+}
+#E.photo{
+	background-image: url(photo4.jpg);
+	background-position: left center;
+}
+#F.photo{
+	background-image: url(sales.jpg);
+	background-position: left center;
+}
+#history p{
+	margin-top: 0;
 }

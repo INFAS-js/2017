@@ -46,3 +46,65 @@
 	background-color: rgba(255,255,255,0.4);
 	border-radius: 100px;
 }
+
+
+
+/*----------photos-----------*/
+#B.photo{
+	-webkit-flex:1 0 0;
+	   -moz-flex:1 0 0;
+		-ms-flex:1 0 0;
+		 -o-flex:1 0 0;
+			flex:1 0 0;
+}
+#X{
+	-webkit-flex:3 0 0;
+	   -moz-flex:3 0 0;
+		-ms-flex:3 0 0;
+		 -o-flex:3 0 0;
+			flex:3 0 0;
+}
+#C.photo{
+	-webkit-flex:1 0 0;
+	   -moz-flex:1 0 0;
+		-ms-flex:1 0 0;
+		 -o-flex:1 0 0;
+			flex:1 0 0;
+}
+#D.photo{
+	-webkit-flex:2 0 0;
+	   -moz-flex:2 0 0;
+		-ms-flex:2 0 0;
+		 -o-flex:2 0 0;
+			flex:2 0 0;
+}
+#E.photo{
+	-webkit-flex:3 0 0;
+	   -moz-flex:3 0 0;
+		-ms-flex:3 0 0;
+		 -o-flex:3 0 0;
+			flex:3 0 0;
+}
+#F.photo{
+	-webkit-flex:1 0 0;
+	   -moz-flex:1 0 0;
+		-ms-flex:1 0 0;
+		 -o-flex:1 0 0;
+			flex:1 0 0;
+}
+
+#A.photo:hover,#W:hover,#Y:hover,
+#Z:hover,#B.photo:hover,#C.photo:hover{
+	-webkit-flex:2 0 0;
+	   -moz-flex:2 0 0;
+		-ms-flex:2 0 0;
+		 -o-flex:2 0 0;
+			flex:2 0 0;
+}
+#F.photo:hover{
+	-webkit-flex:3 0 0;
+	   -moz-flex:3 0 0;
+		-ms-flex:3 0 0;
+		 -o-flex:3 0 0;
+			flex:3 0 0;
+}
