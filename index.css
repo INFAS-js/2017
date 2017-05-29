@@ -44,7 +44,7 @@ a{
 	background-color: #FFB;
 }
 #content-box{
-	overflow-y:overlay; 
+	overflow-y:auto; 
 	padding: 0 30px 30px 30px;
 }
 #content-box>div{
@@ -193,7 +193,7 @@ p.eng{
 	height: 100%;
 }
 #history p{
-	overflow-y:overlay;
+	overflow-y:auto;
 }
 #photos *{
 	-webkit-transition: all 300ms;
