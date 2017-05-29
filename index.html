@@ -4,15 +4,33 @@
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 		<title>INFAS 2017 高中資訊學術聯展</title>
-		<!--meta property="og:image" content=""></meta-->
+		<link href="loading.css" rel="stylesheet"/>
+		<meta property="og:image" content="og.png"></meta>
 		<meta property="og:type" content="website"></meta>
 		<meta property="og:description" content="INFAS 2017 高中資訊學術聯展 06/11 @ 國立科學工業園區實驗高級中學"></meta>
-		<meta property="og:site_name" content="www.infas-js.club"></meta>
+		<meta property="og:url" content="www.infas-js.club"></meta>
+		<meta property="og:site_name" content="INFAS 2017"></meta>
 		<!--link rel="icon" href="favicon.png"-->
+		<link rel="shortcut icon" href="favicon.png">
+		<link rel="icon" type="image/png" href="favicon.png" sizes="256x256">
+		<link rel="icon" type="image/png" href="favicon152.png" sizes="152x152">
+		<link rel="icon" type="image/png" href="favicon76.png" sizes="76x76">
+		<link href="favicon.png" rel="apple-touch-icon" sizes="256x256">
+		<link href="favicon152.png" rel="apple-touch-icon" sizes="152x152">
+		<link href="favicon76.png" rel="apple-touch-icon" sizes="76x76">
 		<link href="index.css" rel="stylesheet"/>
 		<link rel="stylesheet" href="leaflet/leaflet.css"/>
 	</head>
 	<body class="flex column">
+		<div id="DontUseIE">
+			<span class="red title">Please use another web browser.</span><br><br>
+			<span class="yellow">
+				Or click 
+				<a href="#" onclick="document.getElementById('DontUseIE').style.display = 'none';" class="green">here </a>
+				to continue browsing.
+			</span>
+		</div>
+		<div id="load" class="flex column"><span id="loadtext">LOADING ...</span><div id="ani"></div></div>
 		<div id="title"><img src="title.png"></div>
 		<div id="content" class="fill flex column">
 			<div id="navbar" class="flex avg row spaced">
@@ -24,26 +42,30 @@
 				<a class="button" href="#" onclick="page('history')"><span><b>歷史</b></span></a>
 			</div>
 			<div id="content-box" class="fill">
-				<div id="intro">
-					<span class="green"><b>06/11 國立科學工業園區實驗高級中學</b></span>
-					<div class="title">
-						<span class="yellow"><b>INFAS.js 高中資訊學術聯展</b></span>
+				<div id="intro"><div class="flex column">
+					<div class="fill"></div>
+					<div>
+						<span class="green"><b>06/11 國立科學工業園區實驗高級中學</b></span>
+						<div class="title">
+							<span class="yellow"><b>INFAS.js 高中資訊學術聯展</b></span>
+						</div>
+						<div><span class="blue"><b>Information Associate of Students - joint show</b></span></div>
+						<p>　　我們是一群對資訊有強大興趣、技能以及滿腔熱血的高中生。透過聯展，我們將資訊推廣至高中個角落，使我們互相切磋琢磨，並分享自己的知識與成果！</p>
+						<p>　　今年的聯展，將延續去年多樣精采的演講，以及豐富的攤位展示活動。</p><br>
+						<div><span class="blue"><b>今年主題</b></span></div>
+						<div class="title"><span class="yellow"><b>從Ｃ開始</b></span></div>
+						<p>　　許多學生在最剛開始接觸資訊學科都是學習 C、C++、Python 等等的電腦語言。雖然活動名為高中，但我們更希望幫助的對象是所有資訊初學者，甚至是陌生者的學生們，不論是國中、高中、大學。</p>
+						<p>　　就像 C 常作為基礎入門的程式語言之一，我們希望能用最基礎的方式來吸引並教導初學者甚至完全陌生者進入資訊界。</p>
 					</div>
-					<div><span class="blue"><b>Information Associate of Students - joint show</b></span></div>
-					<p>　　我們是一群對資訊有強大興趣、技能以及滿腔熱血的高中生。透過聯展，我們將資訊推廣至高中個角落，使我們互相切磋琢磨，並分享自己的知識與成果！</p>
-					<p>　　今年的聯展，將延續去年多樣精采的演講，以及豐富的攤位展示活動。</p><br>
-					<div><span class="blue"><b>今年主題</b></span></div>
-					<div class="title"><span class="yellow"><b>從Ｃ開始</b></span></div>
-					<p>　　許多學生在最剛開始接觸資訊學科都是學習 C、C++、Python 等等的電腦語言。雖然活動名為高中，但我們更希望幫助的對象是所有資訊初學者，甚至是陌生者的學生們，不論是國中、高中、大學。</p>
-					<p>　　就像 C 常作為基礎入門的程式語言之一，我們希望能用最基礎的方式來吸引並教導初學者甚至完全陌生者進入資訊界。</p>
-				</div>
+					<div class="fill"></div>
+				</div></div>
 
 				<div id="agenda">
 					<div class="flex column">
 						<div class="fill"></div>
 						<table width="100%"><tbody>
 							<tr>
-								<th width="150px"></th><th width="300px"">A 廳</th><th>B 廳</th>
+								<th></th><th>A 廳</th><th>B 廳</th>
 							</tr>
 							<tr class="center">
 								<td>09:30 - 10:00</td><td colspan="2"><b class="yellow">入場</b></td>
@@ -243,9 +265,6 @@
 					<p>　　用Python（程式語言）和Raspberry Pi（Linux電腦/開發板），寫程式、做東西。</p>
 					<p>　　運用語音、影像、手勢偵測技術，設計會和人互動的『狗狗派』。</p>
 					<p>　　每隻『狗狗派』有自己獨特的個性和互動方式，認識『狗狗派』並與它互動。</p><br>
-					<div class="title"><span class="yellow"><b>IBSH Robotics Club</b></span></div>
-					<div><span class="blue"><b>CNC High Accuracy Disassembler (CHAD)</b></span></div>
-					<p class="eng">　　Nowadays, there are so many electronic wastes, in which some valuable metals could be recycled and reused. Within this project, we designed and built a gantry robot that takes the valuable or recyclable elements from a used cell phone. However, since we only had access to limited materials, this project would be a proof of concept; the phone model is a simplified replica of an actual phone, with parts that are easier to remove. In constructing the robot, we used stepper motors, 3D printed pieces, and a aluminum/acrylic for the skeletal structure. For the function apparatus, we used a low resolution camera and a vacuum motor. Meanwhile, the software is implemented using Arduino boards and Raspberry Pi, while the code is mainly written in Python. The gantry works by first capturing an image of the target phone, locating the parts of interest, and then retrieving said parts via the suction gripper. The parts are sorted according to composition and specs - in real life, some will be properly recycled, others will be reused.</p><br>
 					<div class="title"><span class="yellow"><b>臺南女中資訊研究社 #1</b></span></div>
 					<div><span class="blue"><b>祝您中大獎(笑)</b></span></div>
 					<p>　　一個可以隨機產生出樂透號碼的程式。</p>
@@ -254,6 +273,9 @@
 					<div class="title"><span class="yellow"><b>臺南女中資訊研究社 #2</b></span></div>
 					<div><span class="blue"><b>啦嘰</b></span></div>
 					<p>　　啦嘰的設計理念主要是一個自動化的倒垃圾機器。為了減省時間及人力勞力全程試圖自動化。垃圾桶與垃圾線分為一般垃圾與回收桶。垃圾桶下為天平裝置，當垃圾滿後，將會觸動機關，啟動啦嘰。啦嘰則會在取下垃圾桶後沿著路線走動，自行倒除垃圾。</p><br>
+					<div class="title"><span class="yellow"><b>IBSH Robotics Club</b></span></div>
+					<div><span class="blue"><b>CNC High Accuracy Disassembler (CHAD)</b></span></div>
+					<p class="eng">　　Nowadays, there are so many electronic wastes, in which some valuable metals could be recycled and reused. Within this project, we designed and built a gantry robot that takes the valuable or recyclable elements from a used cell phone. However, since we only had access to limited materials, this project would be a proof of concept; the phone model is a simplified replica of an actual phone, with parts that are easier to remove. In constructing the robot, we used stepper motors, 3D printed pieces, and a aluminum/acrylic for the skeletal structure. For the function apparatus, we used a low resolution camera and a vacuum motor. Meanwhile, the software is implemented using Arduino boards and Raspberry Pi, while the code is mainly written in Python. The gantry works by first capturing an image of the target phone, locating the parts of interest, and then retrieving said parts via the suction gripper. The parts are sorted according to composition and specs - in real life, some will be properly recycled, others will be reused.</p><br>
 					<div class="title"><span class="yellow"><b>Drone Club</b></span></div>
 					<div><span class="blue"><b>Drone Video</b></span></div>
 					<p>　　We fly drones to capture spectacular images and videos of the landscape around IBSH and the architecture of IBSH.</p><br>
@@ -271,12 +293,12 @@
 						<div class="fill stretch">
 							<div class="title"><span class="yellow"><b>台塑石化第六輕油裂解廠</b></span></div>
 							<div><span class="blue"><b>台塑關係企業</b></span></div>
-							<img src="sponsor.png">
+							<div id="spons" class="img"></div>
 						</div>
 						<div class="fill stretch">
 							<div class="title"><span class="yellow"><b>國立科學園區實驗高級中學</b></span></div>
 							<div><span class="blue"><b>National Experimental High School</b></span></div>
-							<img src="nehs.png">
+							<div id="nehs" class="img"></div>
 						</div>
 					</div>
 					<div class="fill"></div>
