@@ -47,15 +47,6 @@
 	background-color: rgba(255,255,255,0.2);
 	border-radius: 100px;
 }
-*::-webkit-scrollbar-button       { /* 2 */ }
-*::-webkit-scrollbar-track        { /* 3 */ }
-*::-webkit-scrollbar-track-piece  { /* 4 */ }
-*::-webkit-scrollbar-corner       { /* 6 */ }
-*::-webkit-resizer                { /* 7 */ }
-#agenda a:focus + div>div:last-child::-webkit-scrollbar {
-	display: none;
-}
-
 
 
 /*----------photos-----------*/
