@@ -46,3 +46,7 @@ function loadmap(){
 	    .bindPopup('新竹市東區介壽路300號')
 	    .openPopup();
 }
+
+function showJoin(){
+	document.getElementById("click").style.display = "inline";
+}

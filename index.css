@@ -131,6 +131,13 @@ a{
 	overflow-y:auto;
 	padding: 0 15px;
 }
+#agenda a#join{
+	display: inline;
+}
+#agenda a + input{
+	display: none;
+}
+
 #lec1{
 	background-image: url(lec1.jpg);
 	background-position: right top;
@@ -334,4 +341,8 @@ body{
 
 #GO{
 	background-color: #D66;
+}
+
+form{
+	display: inline;
 }
