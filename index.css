@@ -181,18 +181,18 @@ p.eng{
 	text-align: center;
 	height: 100%;
 }
-#sponsor .img{
+#sponsor .imgbox{
 	height:40vh;
 	padding-top: 20px;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
+	text-align: center;	
 }
-#spons{
-	background-image: url("sponsor.png");
-}
-#nehs{
-	background-image: url("nehs.png");
+#sponsor img{
+	height:100%;
+	/*background-size: contain;*/
+	/*background-repeat: no-repeat;*/
+	/*background-position: center;*/
+	background-color: rgba(255,255,255,0.4);
+	border-radius: 20px;
 }
 
 /*----------photos-----------*/
@@ -330,8 +330,9 @@ body{
 	border-top-right-radius: 20px; 
 	border-bottom-left-radius: 0; 
 }
-#sponsor .img{
+#sponsor .imgbox{
 	height:25vh;
+	max-width: 100%;
 }
 #sponsor>div>div:nth-child(2)>div{
 	margin-bottom: 20px;
