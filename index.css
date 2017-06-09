@@ -180,6 +180,7 @@ p.eng{
 #sponsor,#sponsor>div{
 	text-align: center;
 	height: 100%;
+	width: 100%;
 }
 #sponsor .imgbox{
 	height:40vh;
@@ -243,15 +244,26 @@ p.eng{
 }
 
 /*--------RWD--------*/
+@media only screen and (max-width: 1500px){
+#sponsor .imgbox{
+	height:25vh;
+}
+#sponsor .small{
+	font-size:80%;
+}
+#sponsor {
+	font-size: 14pt;
+}
+}
 @media only screen and (max-width: 1200px){
+body{
+	font-size: 14pt;
+}
 #agenda th:last-child{
 	width: 350px;
 }
 }
 @media only screen and (max-width: 1024px){
-body{
-	font-size: 14pt;
-}
 #agenda th:first-child{
 	width: 140px;
 }
@@ -317,8 +329,28 @@ body{
 	margin-right: 0;
 }
 }
+@media only screen and (max-aspect-ratio: 1024/973){
+#sponsor>div>div:nth-child(2){
+	-webkit-flex-direction:column;
+	   -moz-flex-direction:column;
+		-ms-flex-direction:column;
+		 -o-flex-direction:column;
+			flex-direction:column;
+	height: 100%;
+}
+#row2{
+	-webkit-flex:1 0 0;
+	   -moz-flex:1 0 0;
+		-ms-flex:1 0 0;
+		 -o-flex:1 0 0;
+			flex:1 0 0;
+}
+#sponsor>div>div:nth-child(2)>div{
+	margin-bottom: 20px;
+}
+}
 @media only screen and (max-aspect-ratio: 842/973){
-#sponsor>div>div:nth-child(2),#agenda a:focus + div{
+#agenda a:focus + div{
 	-webkit-flex-direction:column;
 	   -moz-flex-direction:column;
 		-ms-flex-direction:column;
@@ -332,13 +364,28 @@ body{
 }
 #sponsor .imgbox{
 	height:25vh;
-	max-width: 100%;
 }
-#sponsor>div>div:nth-child(2)>div{
+}
+@media only screen and (max-aspect-ratio: 560/973){
+#row2{
+	-webkit-flex-direction:column;
+	   -moz-flex-direction:column;
+		-ms-flex-direction:column;
+		 -o-flex-direction:column;
+			flex-direction:column;
+	-webkit-flex:2 0 0;
+	   -moz-flex:2 0 0;
+		-ms-flex:2 0 0;
+		 -o-flex:2 0 0;
+			flex:2 0 0;
+}
+#row2>div:first-child{
 	margin-bottom: 20px;
 }
+#sponsor .imgbox{
+	height:16vh;
 }
-
+}
 
 #GO{
 	background-color: #D66;

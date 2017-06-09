@@ -28,6 +28,9 @@
 			flex-direction:row;
 	margin:0;
 }
+.center{
+	align-items:center;
+}
 .spaced.column>*{margin-bottom:10px;}
 .spaced.row>*{margin-right:10px;}
 .spaced.column>*:last-child{margin-bottom:0;}
@@ -108,7 +111,7 @@
 		 -o-flex:3 0 0;
 			flex:3 0 0;
 }
-#agenda a:focus + div>div:first-child{
+#agenda a:focus + div>div:first-child,#row2{
 	-webkit-flex:2 0 0;
 	   -moz-flex:2 0 0;
 		-ms-flex:2 0 0;
