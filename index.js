@@ -35,6 +35,7 @@ function clear(){
 	document.getElementById("trans").style.display = "none";
 	document.getElementById("sponsor").style.display = "none";
 	document.getElementById("history").style.display = "none";
+	document.getElementById("puzzle").style.display = "none";
 }
 
 function loadmap(){
