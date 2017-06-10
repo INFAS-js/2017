@@ -41,6 +41,7 @@
 				<a class="button" href="#" onclick="page('trans')"><span><b>交通</b></span></a>
 				<a class="button" href="#" onclick="page('sponsor')"><span><b>贊助</b></span></a>
 				<a class="button" href="#" onclick="page('history')"><span><b>歷史</b></span></a>
+				<a class="button" href="#" onclick="page('puzzle')"><span><b>拼圖</b></span></a>
 				<a class="button" href="http://www.infas-js.club/2017/note/" target="blank" id="GO"><span class="yellow"><b>共筆</b></span></a>
 			</div>
 			<div id="content-box" class="fill">
@@ -136,7 +137,7 @@
 							</tr>
 							<tr class="center">
 								<td>12:00 - 13:20</td>
-								<td colspan="2"><b class="yellow">午餐時間 &amp; <form action="http://140.112.196.197:1337/join" method="post" target="blank"><a href="#" id="join" onclick="showJoin()">特別活動</a> <input id="click" type="text" name="pwd" size="8"></form> &amp; 攤位觀覽</b></td>
+								<td colspan="2"><b class="yellow">午餐時間 &amp; 特別活動 &amp; 攤位觀覽</b></td>
 							</tr>
 							<tr>
 								<td>13:30 - 14:10</td>
@@ -338,6 +339,28 @@
 						</div>
 					</div>
 				</div></div>
+
+				<div id="puzzle">
+					<div class="title">
+						<span class="yellow"><b>遊戲規則</b></span>
+					</div>
+					<ul>
+						<li>首先請玩家至 <b>下方</b> 下載程式碼片段 ( C 語言 ; 共 3 支程式 )以及測資，並依照程式功能說明，將片段還原為功能正確的程式。</li>
+						<li>接著請將測資輸入第一支程式，所得到的輸出為第二支程式的輸入;即第 n 支程式的輸出為第 n + 1 支程式的輸入。而第三題的輸出則是進入 agar.io 的密碼，請再至 <b>最下方</b> 驗證密碼。<br>註:若先前沒有安裝編譯器，可上網搜尋<a target="blank" href="http://cpp.sh" class="blue"> C++ shell </a>，或利用其他線上編譯器。</li>
+						<li>在開始遊玩 agar.io 前，請將玩家名稱設定為您的組別名稱。agar.io 是一個弱肉強食的遊戲:用您的游標來移動你的細胞，或者按空白鍵進行細胞分裂，以閃避較大的細胞和吞噬較小的細胞，目標只有一個:活下去。在 agar.io 遊戲中的前 3 強將於閉幕式上台接受眾人的讚揚。</li>
+					</ul>
+					<div class="title">
+						<span class="yellow"><b>程式碼片段</b></span>
+					</div>
+					<script src="https://gist.github.com/DeemoHarlos/6716376d2aa7b03c488e7ea3f6121f58.js"></script>
+					<script src="https://gist.github.com/DeemoHarlos/c01dc499453be0ba4070573c1d12b122.js"></script>
+					<script src="https://gist.github.com/DeemoHarlos/328bb0c8af02dc4181a7edde3de6c691.js"></script>
+					<div class="title">
+						<span class="yellow"><b>驗證密碼</b></span>
+					</div>
+
+					<form action="http://140.112.196.197:1337/join" method="post" target="blank"><input id="click" type="text" name="pwd" size="8"></form>
+				</div>
 			</div>
 		</div>
 		<script src="leaflet/leaflet.js"></script>
